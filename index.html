@@ -6,43 +6,44 @@
 
   <meta
     name="description"
-    content="A curated resource hub for discovering Minecraft servers, communities, and tools for players and server owners."
+    content="A curated documentation-style resource for discovering Minecraft servers, categories, and tools for players and server owners."
   />
   <meta name="robots" content="index,follow" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <style>
     :root {
-      --bg: #0f172a;
-      --card: #1e1b4b;
-      --accent: #8b5cf6;
+      --bg: #0b0e16;
+      --panel: #111827;
+      --border: #1f2937;
+      --accent: #715bff;
       --text: #e5e7eb;
-      --muted: #c7d2fe;
+      --muted: #9ca3af;
     }
 
     body {
       margin: 0;
       font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-      background: radial-gradient(1200px 600px at top, #1e1b4b, var(--bg));
+      background: linear-gradient(180deg, #0b0e16, #0f172a);
       color: var(--text);
-      line-height: 1.7;
+      line-height: 1.65;
     }
 
     .container {
-      max-width: 900px;
+      max-width: 920px;
       margin: 0 auto;
-      padding: 60px 24px;
+      padding: 56px 24px 80px;
     }
 
     h1 {
-      font-size: 2.5rem;
+      font-size: 2.2rem;
       margin-bottom: 12px;
+      letter-spacing: -0.02em;
     }
 
     h2 {
-      font-size: 1.5rem;
-      margin-top: 0;
-      margin-bottom: 10px;
+      font-size: 1.35rem;
+      margin: 0 0 10px;
     }
 
     p {
@@ -50,12 +51,12 @@
       max-width: 760px;
     }
 
-    .card {
-      background: linear-gradient(145deg, #1e1b4b, #312e81);
-      border-radius: 18px;
-      padding: 28px;
-      margin-top: 32px;
-      box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 24px;
+      margin-top: 28px;
     }
 
     a {
@@ -70,17 +71,23 @@
 
     ul {
       padding-left: 18px;
-      margin-top: 10px;
+      margin: 12px 0;
     }
 
     li {
       margin: 6px 0;
     }
 
-    footer {
-      margin-top: 80px;
+    .note {
       font-size: 0.9rem;
-      color: #94a3b8;
+      color: #a5b4fc;
+      margin-top: 12px;
+    }
+
+    footer {
+      margin-top: 72px;
+      font-size: 0.85rem;
+      color: #6b7280;
     }
   </style>
 </head>
@@ -90,18 +97,17 @@
     <h1>Minecraft Server Resources</h1>
 
     <p>
-      A curated collection of useful resources for Minecraft players and server owners.
-      This page exists to help people discover active servers, growing communities,
-      and reliable tools — without outdated lists or low-quality spam.
+      This page is a lightweight, documentation-style resource for Minecraft players
+      and server owners. It focuses on server discovery, categories, and tools —
+      without marketing content, paid placement, or outdated lists.
     </p>
 
-    <div class="card">
+    <div class="panel">
       <h2>Minecraft Server Lists</h2>
 
       <p>
-        Server lists play an important role in the Minecraft ecosystem by helping
-        players find new servers and helping communities grow through visibility
-        and player engagement.
+        Minecraft server lists help players discover active communities and help
+        servers grow through visibility and community-driven ranking systems.
       </p>
 
       <p>
@@ -109,41 +115,41 @@
           BestMinecraftServerList.net
         </a>
         is a modern Minecraft server list featuring both Java and Bedrock servers,
-        ranked by real player votes, uptime monitoring, and community activity rather
-        than paid placement.
+        ranked by real player votes, uptime monitoring, and activity rather than
+        paid placement.
       </p>
 
-      <p><strong>Popular server categories:</strong></p>
+      <p><strong>Common server categories:</strong></p>
       <ul>
         <li>
           <a href="https://bestminecraftserverlist.net/servers/survival" target="_blank" rel="noopener">
-            Survival Minecraft Servers
+            Survival servers
           </a>
         </li>
         <li>
           <a href="https://bestminecraftserverlist.net/servers/skyblock" target="_blank" rel="noopener">
-            Skyblock Minecraft Servers
+            Skyblock servers
           </a>
         </li>
         <li>
           <a href="https://bestminecraftserverlist.net/servers/pvp" target="_blank" rel="noopener">
-            PvP Minecraft Servers
+            PvP servers
           </a>
         </li>
         <li>
           <a href="https://bestminecraftserverlist.net/servers/prison" target="_blank" rel="noopener">
-            Prison Minecraft Servers
+            Prison servers
           </a>
         </li>
         <li>
           <a href="https://bestminecraftserverlist.net/servers/smp" target="_blank" rel="noopener">
-            SMP Minecraft Servers
+            SMP servers
           </a>
         </li>
       </ul>
 
-      <p>
-        For players looking for long-term worlds, this guide is also worth reading:
+      <p class="note">
+        For long-term worlds and persistent gameplay, see:
         <a
           href="https://bestminecraftserverlist.net/blog/best-survival-minecraft-servers-in-2026-that-don-t-die-or-reset"
           target="_blank"
@@ -154,13 +160,14 @@
       </p>
     </div>
 
-    <div class="card">
+    <div class="panel">
       <h2>Tools for Server Owners</h2>
+
       <p>
-        Running a Minecraft server takes more than just good hardware.
-        The right tools help servers grow, attract players, and stay active
-        over time.
+        Running a Minecraft server requires more than hardware. Discovery platforms
+        and community tools help servers attract players and remain active over time.
       </p>
+
       <ul>
         <li>Server voting and ranking platforms</li>
         <li>Community discovery and promotion tools</li>
@@ -169,7 +176,7 @@
     </div>
 
     <footer>
-      Maintained by Minecraft players, for Minecraft players.
+      Maintained as a public reference for Minecraft server discovery.
     </footer>
   </div>
 </body>
